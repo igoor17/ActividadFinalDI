@@ -1,0 +1,2 @@
+Dispositivo{id='1', fechaCompra=2023-10-10, tipo=ORDENADOR, marca='asus', modelo='rog'}
+Dispositivo{id='2', fechaCompra=2024-02-01, tipo=PORTATIL, marca='msi', modelo='katana'}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestioninstituto.Controller">
+   <children>
+      <Label layoutX="227.0" layoutY="14.0" text="INVENTARIO">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="dispositivosTable" layoutX="16.0" layoutY="70.0" prefHeight="200.0" prefWidth="559.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="65.60003662109375" text="ID" />
+          <TableColumn fx:id="tipoColumn" prefWidth="109.5999755859375" text="Tipo" />
+            <TableColumn fx:id="marcaColumn" prefWidth="101.5999755859375" text="Marca" />
+            <TableColumn fx:id="modeloColumn" prefWidth="153.60003662109375" text="Modelo" />
+            <TableColumn fx:id="fechaColumn" prefWidth="128.79998779296875" text="Fecha Compra" />
+        </columns>
+      </TableView>
+      <Button fx:id="altaButton" layoutX="16.0" layoutY="300.0" mnemonicParsing="false" onAction="#abrirAltaDispositivo" text="ALTA DISPOSITIVO" />
+      <Button fx:id="bajaButton" layoutX="151.0" layoutY="300.0" mnemonicParsing="false" onAction="#bajaDispositivo" text="BAJA DISPOSITIVO" />
+      <Button fx:id="modificarButton" layoutX="284.0" layoutY="300.0" mnemonicParsing="false" onAction="#modificarDispositivo" text="MODIFICAR" />
+      <Button fx:id="imprimirButton" layoutX="380.0" layoutY="300.0" mnemonicParsing="false" onAction="#imprimir" text="IMPRIMIR" />
+   </children>
+</AnchorPane>
